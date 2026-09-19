@@ -1,0 +1,18 @@
+{
+  "name": "goldkhata-autopost",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Auto-posts GoldKhata social content to Instagram, Facebook and YouTube from queue/calendar.json",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "post": "node src/run-scheduler.js",
+    "dry": "node src/run-scheduler.js --dry-run",
+    "yt-token": "node src/get-youtube-token.js"
+  },
+  "dependencies": {
+    "googleapis": "^172.0.0"
+  }
+}
