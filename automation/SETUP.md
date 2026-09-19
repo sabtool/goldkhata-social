@@ -50,6 +50,11 @@ Claude makes a month of posts ──▶ automation/queue/calendar.json ──▶
 To renew the key after a password change, repeat steps 3 and 4 (the secret
 is updated, not added).
 
+**Every 90 days** Meta asks the owner to re-approve the app (its "data access"
+window; the first one ends 18 Dec 2026). Re-approve before then: Graph API
+Explorer → app GoldKhata Autopost → Generate Access Token → Continue → Save.
+If posting fails after that date, make a new Page key (steps 3–4).
+
 ## By hand
 
 - `cd automation && node src/run-scheduler.js --dry-run` — shows what would
