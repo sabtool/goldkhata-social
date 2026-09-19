@@ -10,7 +10,7 @@ export const QUEUE_PATH = path.join(AUTOMATION_DIR, 'queue', 'calendar.json');
 // Times in the queue are IST. Cron runs in UTC; this offset keeps them honest.
 export const IST_OFFSET = '+05:30';
 
-export const GRAPH_VERSION = process.env.GRAPH_VERSION || 'v23.0';
+export const GRAPH_VERSION = process.env.GRAPH_VERSION || 'v26.0';
 export const GRAPH = `https://graph.facebook.com/${GRAPH_VERSION}`;
 export const GRAPH_VIDEO = `https://graph-video.facebook.com/${GRAPH_VERSION}`;
 
