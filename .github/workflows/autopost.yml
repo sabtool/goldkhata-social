@@ -1,0 +1,42 @@
+name: Auto-post social content
+
+on:
+  schedule:
+    # Every 30 minutes (UTC). The scheduler works in IST and posts only what is due.
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: autopost
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      # ponytail: no npm install; the Instagram/Facebook posters only use fetch. Add it back when
+      # YouTube posting is switched on (post-youtube.js needs googleapis).
+      - name: Run scheduler
+        working-directory: automation
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+        run: node src/run-scheduler.js
+
+      - name: Save queue state
+        if: always()
+        run: |
+          git config user.name "goldkhata-autopost"
+          git config user.email "actions@users.noreply.github.com"
+          git add automation/queue/calendar.json
+          git diff --cached --quiet && exit 0
+          git commit -m "autopost: update queue state"
+          git pull --rebase --autostash && git push
