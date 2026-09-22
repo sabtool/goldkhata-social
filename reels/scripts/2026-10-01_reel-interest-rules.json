@@ -1,0 +1,43 @@
+{
+  "id": "2026-10-01_reel-interest-rules",
+  "music": "music/bed.mp3",
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "Who is right?",
+      "text": "Software says ₹4,950. Your book says",
+      "accent": "₹4,500.",
+      "vo": "The software says four thousand nine hundred and fifty. Your book says four thousand five hundred. Who is right?"
+    },
+    {
+      "type": "screen",
+      "label": "Your rules",
+      "capture": {
+        "path": "/settings/interest",
+        "focus": "rules"
+      },
+      "vo": "In Gold Khaataa, you set your own method once. The first month, part months, and yearly compounding."
+    },
+    {
+      "type": "screen",
+      "label": "Every screen follows",
+      "capture": {
+        "path": "/loans/:id",
+        "focus": "interest"
+      },
+      "vo": "After that, the loan page, the release bill and every report follow your method."
+    },
+    {
+      "type": "proof",
+      "text": "Your business.",
+      "accent": "Your rules."
+    },
+    {
+      "type": "cta",
+      "line": "Try it <em>free</em> for 30 days.",
+      "l1": "Free for 30 days",
+      "l2": "Start your trial",
+      "vo": "Try Gold Khaataa free for thirty days."
+    }
+  ]
+}

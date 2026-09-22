@@ -1,0 +1,52 @@
+{
+  "id": "2026-09-24_reel-pledge-card",
+  "music": "music/bed.mp3",
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "At the counter",
+      "text": "New loan to printed pledge card in",
+      "accent": "40 seconds.",
+      "vo": "New gold loan to a printed pledge card, in forty seconds. Watch."
+    },
+    {
+      "type": "screen",
+      "label": "1 · Customer",
+      "capture": {
+        "path": "/loans/new",
+        "focus": "customer"
+      },
+      "vo": "Pick the customer. Their photo and KYC come up with them."
+    },
+    {
+      "type": "screen",
+      "label": "2 · Ornaments",
+      "capture": {
+        "path": "/loans/new",
+        "focus": "ornaments"
+      },
+      "vo": "Add the ornaments and their weight. The loan amount is worked out at today's gold rate."
+    },
+    {
+      "type": "screen",
+      "label": "3 · Print",
+      "capture": {
+        "path": "/loans",
+        "focus": "print"
+      },
+      "vo": "Save, and the pledge card prints on your own letterhead, ready to sign."
+    },
+    {
+      "type": "proof",
+      "text": "Your letterhead.",
+      "accent": "One press."
+    },
+    {
+      "type": "cta",
+      "line": "Try it <em>free</em> for 30 days.",
+      "l1": "Free for 30 days",
+      "l2": "Start your trial",
+      "vo": "Try Gold Khaataa free for thirty days."
+    }
+  ]
+}

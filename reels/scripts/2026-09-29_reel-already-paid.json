@@ -1,0 +1,40 @@
+{
+  "id": "2026-09-29_reel-already-paid",
+  "music": "music/bed.mp3",
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "Sound familiar?",
+      "text": "“I already paid",
+      "accent": "last month.”",
+      "vo": "I already paid last month. Sound familiar?"
+    },
+    {
+      "type": "screen",
+      "label": "Every receipt",
+      "capture": {
+        "path": "/loans/:id",
+        "focus": "payments"
+      },
+      "vo": "Open the loan. Every payment is there, with the date and the exact time."
+    },
+    {
+      "type": "card",
+      "label": "Customer's copy",
+      "card": "whatsapp",
+      "vo": "And the customer already has the same receipt on WhatsApp, from your firm's own number."
+    },
+    {
+      "type": "proof",
+      "text": "No more arguments",
+      "accent": "at the counter."
+    },
+    {
+      "type": "cta",
+      "line": "Questions? <em>WhatsApp us.</em>",
+      "l1": "WhatsApp us",
+      "l2": "wa.me/918804888883",
+      "vo": "Questions? WhatsApp us."
+    }
+  ]
+}

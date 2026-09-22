@@ -1,0 +1,10 @@
+{
+  "name": "goldkhata-reels",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Renders GoldKhata reels: real demo screens + motion + Vanishree voice + captions → 1080x1920 MP4",
+  "type": "module",
+  "dependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

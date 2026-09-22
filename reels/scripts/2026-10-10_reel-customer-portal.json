@@ -1,0 +1,41 @@
+{
+  "id": "2026-10-10_reel-customer-portal",
+  "music": "music/bed.mp3",
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "All day long",
+      "text": "“How much do",
+      "accent": "I owe?”",
+      "vo": "How much do I owe? How many times a day do you hear that?"
+    },
+    {
+      "type": "screen",
+      "label": "Customer portal",
+      "capture": {
+        "path": "/portal",
+        "focus": "phone",
+        "public": true
+      },
+      "vo": "With Gold Khaataa's customer portal, customers sign in with a code on WhatsApp."
+    },
+    {
+      "type": "card",
+      "label": "Their own balance",
+      "card": "portal",
+      "vo": "And they see their principal and interest up to today, by themselves."
+    },
+    {
+      "type": "proof",
+      "text": "Fewer calls.",
+      "accent": "More counter time."
+    },
+    {
+      "type": "cta",
+      "line": "Questions? <em>WhatsApp us.</em>",
+      "l1": "WhatsApp us",
+      "l2": "wa.me/918804888883",
+      "vo": "Questions? WhatsApp us."
+    }
+  ]
+}

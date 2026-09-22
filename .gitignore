@@ -6,3 +6,6 @@ automation/.env
 # Internal working docs stay on this Mac
 CLAUDE.md
 AGENT-PLAN.md
+reels/.work/
+reels/.env
+reels/.session/

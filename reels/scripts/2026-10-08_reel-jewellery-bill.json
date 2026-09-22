@@ -1,0 +1,43 @@
+{
+  "id": "2026-10-08_reel-jewellery-bill",
+  "music": "music/bed.mp3",
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "Do you sell jewellery too?",
+      "text": "Loans and sales.",
+      "accent": "One system.",
+      "vo": "Do you sell jewellery too? Then this is for you."
+    },
+    {
+      "type": "screen",
+      "label": "GST bill",
+      "capture": {
+        "path": "/jewellery/sales/new",
+        "focus": "items"
+      },
+      "vo": "Scan the tag, and the item comes onto the bill, with GST worked out."
+    },
+    {
+      "type": "screen",
+      "label": "Old gold",
+      "capture": {
+        "path": "/jewellery/sales/new",
+        "focus": "old-gold"
+      },
+      "vo": "Take old gold in exchange, on the same bill."
+    },
+    {
+      "type": "proof",
+      "text": "Same customer.",
+      "accent": "One history."
+    },
+    {
+      "type": "cta",
+      "line": "Questions? <em>WhatsApp us.</em>",
+      "l1": "WhatsApp us",
+      "l2": "wa.me/918804888883",
+      "vo": "Questions? WhatsApp us."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "2026-10-13_reel-part-release",
+  "music": "music/bed.mp3",
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "Real counter work",
+      "text": "One chain back.",
+      "accent": "The loan goes on.",
+      "vo": "The customer wants one chain back, but the loan should go on."
+    },
+    {
+      "type": "screen",
+      "label": "Part-release",
+      "capture": {
+        "path": "/loans/:id",
+        "focus": "release"
+      },
+      "vo": "In Gold Khaataa, release just that ornament. The loan continues with the rest."
+    },
+    {
+      "type": "screen",
+      "label": "Top-up",
+      "capture": {
+        "path": "/loans/:id",
+        "focus": "topup"
+      },
+      "vo": "Need more money on the same gold? Add a top-up to the same loan."
+    },
+    {
+      "type": "proof",
+      "text": "Handled.",
+      "accent": "Properly."
+    },
+    {
+      "type": "cta",
+      "line": "Try it <em>free</em> for 30 days.",
+      "l1": "Free for 30 days",
+      "l2": "Start your trial",
+      "vo": "Try Gold Khaataa free for thirty days."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "2026-10-03_reel-day-close",
+  "music": "music/bed.mp3",
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "At closing time",
+      "text": "₹500 short. Tonight, or",
+      "accent": "next month?",
+      "vo": "Five hundred rupees short. Do you find out tonight, or next month?"
+    },
+    {
+      "type": "screen",
+      "label": "Cash book",
+      "capture": {
+        "path": "/cash-close",
+        "focus": "book"
+      },
+      "vo": "Gold Khaataa's cash book records every loan, payment and expense as it happens."
+    },
+    {
+      "type": "screen",
+      "label": "Day close",
+      "capture": {
+        "path": "/cash-close",
+        "focus": "difference"
+      },
+      "vo": "Count the drawer at closing, and any difference shows up the same evening."
+    },
+    {
+      "type": "proof",
+      "text": "Caught",
+      "accent": "the same evening."
+    },
+    {
+      "type": "cta",
+      "line": "Questions? <em>WhatsApp us.</em>",
+      "l1": "WhatsApp us",
+      "l2": "wa.me/918804888883",
+      "vo": "Questions? WhatsApp us."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "2026-09-26_reel-upi-qr",
+  "music": "music/bed.mp3",
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "At a busy counter",
+      "text": "₹3,408 or",
+      "accent": "₹3,480?",
+      "vo": "Three thousand four hundred and eight, or three thousand four hundred and eighty?"
+    },
+    {
+      "type": "screen",
+      "label": "Exact amount",
+      "capture": {
+        "path": "/payments",
+        "focus": "upi-qr"
+      },
+      "vo": "In Gold Khaataa, the UPI QR already carries the exact amount due. The customer only scans and pays."
+    },
+    {
+      "type": "screen",
+      "label": "Every mode",
+      "capture": {
+        "path": "/payments",
+        "focus": "modes"
+      },
+      "vo": "Cash, UPI, both together, bank or cheque. A receipt goes out every time."
+    },
+    {
+      "type": "proof",
+      "text": "No wrong figures.",
+      "accent": "Ever."
+    },
+    {
+      "type": "cta",
+      "line": "Questions? <em>WhatsApp us.</em>",
+      "l1": "WhatsApp us",
+      "l2": "wa.me/918804888883",
+      "vo": "Questions? WhatsApp us."
+    }
+  ]
+}

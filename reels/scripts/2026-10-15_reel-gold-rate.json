@@ -1,0 +1,43 @@
+{
+  "id": "2026-10-15_reel-gold-rate",
+  "music": "music/bed.mp3",
+  "scenes": [
+    {
+      "type": "hook",
+      "kicker": "Before the festive season",
+      "text": "Today's gold rate.",
+      "accent": "Everywhere.",
+      "vo": "Today's gold rate. On every screen, and on your customers' phones."
+    },
+    {
+      "type": "screen",
+      "label": "Live rate",
+      "capture": {
+        "path": "/dashboard",
+        "focus": "rate"
+      },
+      "vo": "Gold Khaataa shows the live gold rate on every screen, so every loan starts from today's price."
+    },
+    {
+      "type": "screen",
+      "label": "Rate broadcast",
+      "capture": {
+        "path": "/whatsapp/campaigns",
+        "focus": "rate-broadcast"
+      },
+      "vo": "And a weekly gold rate message goes to your customers, from your own WhatsApp number."
+    },
+    {
+      "type": "proof",
+      "text": "Right rate.",
+      "accent": "Right away."
+    },
+    {
+      "type": "cta",
+      "line": "Questions? <em>WhatsApp us.</em>",
+      "l1": "WhatsApp us",
+      "l2": "wa.me/918804888883",
+      "vo": "Questions? WhatsApp us."
+    }
+  ]
+}
