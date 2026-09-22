@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { GRAPH, GRAPH_VIDEO, graph, assetPath, log } from './lib.js';
+import { GRAPH, graph, assetPath, log } from './lib.js';
 
 // Facebook Pages API. Photos and videos are uploaded directly from the repo
 // files (multipart) — no public hosting needed on this side.
@@ -62,11 +62,25 @@ export async function postFacebook(item) {
   }
 
   if (item.format === 'reel') {
-    const { id } = await graph(`${GRAPH_VIDEO}/${pageId()}/videos`, {
+    // Facebook Reels API: start → upload the bytes → finish (a plain /videos post is not a reel).
+    const { video_id, upload_url } = await graph(`${GRAPH}/${pageId()}/video_reels`, {
       method: 'POST',
-      body: await fileForm(item.assets[0], { description: message }),
+      params: { upload_phase: 'start' },
     });
-    return id;
+    const buf = await readFile(assetPath(item.assets[0]));
+    const res = await fetch(upload_url, {
+      method: 'POST',
+      headers: { Authorization: `OAuth ${process.env.META_ACCESS_TOKEN}`, offset: '0', file_size: String(buf.length) },
+      body: buf,
+    });
+    const up = await res.json().catch(() => ({}));
+    if (!res.ok || up.success !== true) throw new Error(`Facebook reel upload failed: ${JSON.stringify(up)}`);
+    await graph(`${GRAPH}/${pageId()}/video_reels`, {
+      method: 'POST',
+      params: { upload_phase: 'finish', video_id, video_state: 'PUBLISHED', description: message },
+    });
+    log('  facebook: reel published');
+    return video_id;
   }
 
   throw new Error(`Unknown format "${item.format}" for Facebook (use carousel | image | reel)`);

@@ -78,6 +78,7 @@ export async function postInstagram(item) {
         video_url: assetUrl(item.assets[0]),
         caption,
         share_to_feed: 'true',
+        ...(item.cover ? { cover_url: assetUrl(requireJpeg(item.cover)) } : {}),
       },
     });
     log('  instagram: reel uploaded, waiting for processing…');

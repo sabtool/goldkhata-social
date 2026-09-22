@@ -71,6 +71,28 @@
   .sheets { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
   .sheets .chip { font-size: 29px; padding: 14px 22px; }
   .xl { display: flex; align-items: center; gap: 22px; padding: 18px 0 4px; font: 600 33px Inter; }
+  /* checklist (p13) */
+  .check { display: flex; align-items: center; gap: 26px; padding: 26px 0; border-top: 2px solid #F1ECE0; font: 600 36px/1.25 Inter; }
+  .check:first-of-type { border-top: 0; padding-top: 6px; }
+  .tick { width: 56px; height: 56px; border-radius: 50%; background: #E7F5EF; color: #0E8A5F; display: grid; place-items: center; font: 800 32px Inter; flex-shrink: 0; }
+  /* browser (p14) */
+  .browser { width: 100%; background: #fff; border-radius: 26px; overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,.38); color: #12233F; }
+  .bar { background: #EEF0F4; padding: 22px 26px; display: flex; align-items: center; gap: 18px; }
+  .lights { display: flex; gap: 10px; } .lights i { width: 16px; height: 16px; border-radius: 50%; background: #C9CED8; display: block; }
+  .url { flex: 1; background: #fff; border-radius: 999px; padding: 14px 26px; font: 600 32px Inter; color: #12233F; }
+  .url b { color: #8A6410; }
+  .signin { padding: 44px 52px 50px; display: grid; gap: 18px; }
+  .signin .firm { font: 700 40px "Playfair Display", serif; }
+  .field { border: 2px solid #E6DDC8; border-radius: 16px; padding: 20px 24px; font: 500 28px Inter; color: #8792A6; }
+  .go { background: #12233F; color: #fff; border-radius: 16px; padding: 22px; text-align: center; font: 700 30px Inter; }
+  /* diyas (p15) */
+  .festive { text-align: center; }
+  .diyas { display: flex; justify-content: center; gap: 30px; margin-bottom: 64px; }
+  .diya { width: 40px; display: grid; justify-items: center; }
+  .flame { width: 22px; height: 38px; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; background: radial-gradient(circle at 50% 70%, #FFF3C4, #F5C542 55%, #D4A017); box-shadow: 0 0 28px 8px rgba(245,197,66,.45); }
+  .bowl { width: 40px; height: 16px; margin-top: 6px; border-radius: 0 0 22px 22px; background: linear-gradient(#D4A017, #8A6410); }
+  .greet { font: 700 150px/1 "Playfair Display", serif; color: #F5C542; }
+  .greet-sub { font: 500 40px/1.45 Inter; color: rgba(255,255,255,.85); margin-top: 36px; }
   .xl-ico { width: 92px; height: 84px; border-radius: 12px; background: #0E8A5F; color: #fff; display: grid; place-items: center; font: 800 22px Inter; flex-shrink: 0; }
 </style>
 </head>
@@ -292,6 +314,54 @@
     </div></div>
   </div>
   <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<!-- 13 · Sunday tip · WA -->
+<section class="post cream" id="p13">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Sunday tip</div>
+  <h1>Before you <em>lock&nbsp;up</em> tonight.</h1>
+  <p class="sub">Three checks that stop small leaks.</p>
+  <div class="art">
+    <div class="card">
+      <div class="check"><span class="tick">✓</span>Drawer counted against the book</div>
+      <div class="check"><span class="tick">✓</span>A receipt for every payment</div>
+      <div class="check"><span class="tick">✓</span>Tomorrow’s dues noted</div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Questions? WhatsApp us</div><div class="l2">wa.me/918804888883</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<!-- 14 · Own web address · trial -->
+<section class="post navy" id="p14">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Your own web address</div>
+  <h1>Your firm’s name. <em>Your own address.</em></h1>
+  <div class="art">
+    <div class="browser">
+      <div class="bar"><span class="lights"><i></i><i></i><i></i></span><span class="url"><b>yourfirm</b>.goldkhata.com</span></div>
+      <div class="signin">
+        <div class="firm">Your Firm Gold Loans</div>
+        <div class="field">Username</div>
+        <div class="field">Password</div>
+        <div class="go">Sign in</div>
+      </div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<!-- 15 · Navratri greeting · WA -->
+<section class="post navy no-eyebrow" id="p15">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="art">
+    <div class="festive">
+      <div class="diyas"><span class="diya"><i class="flame"></i><i class="bowl"></i></span><span class="diya"><i class="flame"></i><i class="bowl"></i></span><span class="diya"><i class="flame"></i><i class="bowl"></i></span><span class="diya"><i class="flame"></i><i class="bowl"></i></span><span class="diya"><i class="flame"></i><i class="bowl"></i></span><span class="diya"><i class="flame"></i><i class="bowl"></i></span><span class="diya"><i class="flame"></i><i class="bowl"></i></span><span class="diya"><i class="flame"></i><i class="bowl"></i></span><span class="diya"><i class="flame"></i><i class="bowl"></i></span></div>
+      <div class="greet">Happy<br><em style="font-style:italic">Navratri</em></div>
+      <p class="greet-sub">Nine nights of light.<br>May your business shine all year.</p>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Talk to us anytime</div><div class="l2">wa.me/918804888883</div></div><div class="site">goldkhata.com</div></footer>
 </section>
 
 <script>

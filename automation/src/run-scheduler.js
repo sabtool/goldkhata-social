@@ -1,4 +1,5 @@
-import { loadEnv, loadQueue, saveQueue, scheduledEpoch, log } from './lib.js';
+import { execSync } from 'node:child_process';
+import { loadEnv, loadQueue, saveQueue, scheduledEpoch, log, sleep, REPO_ROOT } from './lib.js';
 
 // The posting brain. Run it any time (cron / GitHub Actions / by hand):
 //   node src/run-scheduler.js            → posts everything due
@@ -26,9 +27,27 @@ if (!process.env.META_ACCESS_TOKEN && !DRY) {
   log('META_ACCESS_TOKEN not set: Instagram/Facebook not connected yet, nothing posted');
   process.exit(0);
 }
-const queue = await loadQueue();
-const now = Date.now();
+let queue = await loadQueue();
 const autoApprove = process.env.AUTO_APPROVE === 'true';
+
+// GitHub's schedule only wakes this job every few hours (seen: 2–5 h apart), so a run that
+// starts before the next post waits for it. A job may live 6 h; keep a margin.
+const MAX_WAIT_MS = 5.5 * 3_600_000;
+if (process.env.GITHUB_ACTIONS === 'true' && !DRY) {
+  const soon = queue.items
+    .filter((i) => i.status !== 'posted' && i.status !== 'skipped_stale' && (i.approved || autoApprove))
+    .map(scheduledEpoch)
+    .filter((t) => t > Date.now() && t - Date.now() <= MAX_WAIT_MS);
+  if (soon.length) {
+    const until = Math.min(...soon);
+    log(`next post due ${new Date(until).toISOString()}: waiting ${Math.round((until - Date.now()) / 60000)} min`);
+    await sleep(until - Date.now() + 5_000);
+    // The queue may have changed on GitHub while we waited; never post from a stale copy.
+    execSync('git pull -q --rebase --autostash', { cwd: REPO_ROOT, stdio: 'inherit' });
+    queue = await loadQueue();
+  }
+}
+const now = Date.now();
 let failures = 0;
 let acted = false;
 
