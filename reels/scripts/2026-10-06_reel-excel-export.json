@@ -14,7 +14,7 @@
       "label": "One tap",
       "capture": {
         "path": "/settings/backup",
-        "focus": "export"
+        "focus": "Export"
       },
       "vo": "In Gold Khaataa, one tap downloads every record. Customers, loans, payments and ornaments, in one Excel file."
     },

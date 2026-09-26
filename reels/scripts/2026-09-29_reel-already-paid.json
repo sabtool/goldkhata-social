@@ -14,7 +14,7 @@
       "label": "Every receipt",
       "capture": {
         "path": "/loans/:id",
-        "focus": "payments"
+        "focus": "Payment"
       },
       "vo": "Open the loan. Every payment is there, with the date and the exact time."
     },

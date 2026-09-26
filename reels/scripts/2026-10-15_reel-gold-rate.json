@@ -14,7 +14,7 @@
       "label": "Live rate",
       "capture": {
         "path": "/dashboard",
-        "focus": "rate"
+        "focus": "Gold rate"
       },
       "vo": "Gold Khaataa shows the live gold rate on every screen, so every loan starts from today's price."
     },
@@ -23,7 +23,7 @@
       "label": "Rate broadcast",
       "capture": {
         "path": "/whatsapp/campaigns",
-        "focus": "rate-broadcast"
+        "focus": "rate"
       },
       "vo": "And a weekly gold rate message goes to your customers, from your own WhatsApp number."
     },

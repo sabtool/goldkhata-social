@@ -14,7 +14,7 @@
       "label": "Part-release",
       "capture": {
         "path": "/loans/:id",
-        "focus": "release"
+        "focus": "Release"
       },
       "vo": "In Gold Khaataa, release just that ornament. The loan continues with the rest."
     },
@@ -23,7 +23,7 @@
       "label": "Top-up",
       "capture": {
         "path": "/loans/:id",
-        "focus": "topup"
+        "focus": "Top-up"
       },
       "vo": "Need more money on the same gold? Add a top-up to the same loan."
     },

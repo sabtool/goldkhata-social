@@ -14,7 +14,7 @@
       "label": "Cash book",
       "capture": {
         "path": "/cash-close",
-        "focus": "book"
+        "focus": "Book cash"
       },
       "vo": "Gold Khaataa's cash book records every loan, payment and expense as it happens."
     },
@@ -23,7 +23,7 @@
       "label": "Day close",
       "capture": {
         "path": "/cash-close",
-        "focus": "difference"
+        "focus": "Variance"
       },
       "vo": "Count the drawer at closing, and any difference shows up the same evening."
     },

@@ -14,7 +14,7 @@
       "label": "1 · Customer",
       "capture": {
         "path": "/loans/new",
-        "focus": "customer"
+        "focus": "Customer"
       },
       "vo": "Pick the customer. Their photo and KYC come up with them."
     },
@@ -23,7 +23,7 @@
       "label": "2 · Ornaments",
       "capture": {
         "path": "/loans/new",
-        "focus": "ornaments"
+        "focus": "Ornament Details"
       },
       "vo": "Add the ornaments and their weight. The loan amount is worked out at today's gold rate."
     },
@@ -31,8 +31,8 @@
       "type": "screen",
       "label": "3 · Print",
       "capture": {
-        "path": "/loans",
-        "focus": "print"
+        "path": "/loans/:id",
+        "focus": "Loan record"
       },
       "vo": "Save, and the pledge card prints on your own letterhead, ready to sign."
     },

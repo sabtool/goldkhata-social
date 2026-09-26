@@ -14,7 +14,7 @@
       "label": "Your rules",
       "capture": {
         "path": "/settings/interest",
-        "focus": "rules"
+        "focus": "Compounding method"
       },
       "vo": "In Gold Khaataa, you set your own method once. The first month, part months, and yearly compounding."
     },
@@ -23,7 +23,7 @@
       "label": "Every screen follows",
       "capture": {
         "path": "/loans/:id",
-        "focus": "interest"
+        "focus": "Interest due now"
       },
       "vo": "After that, the loan page, the release bill and every report follow your method."
     },

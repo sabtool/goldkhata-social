@@ -14,7 +14,7 @@
       "label": "GST bill",
       "capture": {
         "path": "/jewellery/sales/new",
-        "focus": "items"
+        "focus": "Item"
       },
       "vo": "Scan the tag, and the item comes onto the bill, with GST worked out."
     },
@@ -23,7 +23,7 @@
       "label": "Old gold",
       "capture": {
         "path": "/jewellery/sales/new",
-        "focus": "old-gold"
+        "focus": "Old gold"
       },
       "vo": "Take old gold in exchange, on the same bill."
     },

@@ -14,7 +14,7 @@
       "label": "Customer portal",
       "capture": {
         "path": "/portal",
-        "focus": "phone",
+        "focus": "mobile number",
         "public": true
       },
       "vo": "With Gold Khaataa's customer portal, customers sign in with a code on WhatsApp."

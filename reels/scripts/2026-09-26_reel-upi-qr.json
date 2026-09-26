@@ -14,7 +14,7 @@
       "label": "Exact amount",
       "capture": {
         "path": "/payments",
-        "focus": "upi-qr"
+        "focus": "UPI"
       },
       "vo": "In Gold Khaataa, the UPI QR already carries the exact amount due. The customer only scans and pays."
     },
@@ -23,7 +23,7 @@
       "label": "Every mode",
       "capture": {
         "path": "/payments",
-        "focus": "modes"
+        "focus": "Mode"
       },
       "vo": "Cash, UPI, both together, bank or cheque. A receipt goes out every time."
     },
