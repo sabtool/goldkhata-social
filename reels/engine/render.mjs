@@ -46,6 +46,13 @@ spec.scenes.forEach((s, i) => {
 });
 const total = Math.min(t, limit);
 
+// Cut between two phone scenes, dissolve everywhere else.
+spec.scenes.forEach((s, i) => {
+  const prev = spec.scenes[i - 1], next = spec.scenes[i + 1];
+  s.xfIn = prev && prev.type === 'screen' && s.type === 'screen' ? 0 : 0.28;
+  s.xfOut = next && next.type === 'screen' && s.type === 'screen' ? 0 : 0.28;
+});
+
 // Voice text says "Gold Khaataa" so it is pronounced right; captions show the brand as written.
 function wordsFrom(a, offset, scene) {
   const out = [];

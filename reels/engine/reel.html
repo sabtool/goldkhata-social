@@ -162,12 +162,15 @@ function poseEnd(sc, local) {
 window.renderAt = (t) => {
   for (const sc of scenes) {
     const { start, end } = sc.spec;
-    const vis = t >= start - XF && t < end + XF;
+    // Phone-to-phone is a cut (a dissolve would show two phones at once); other joins dissolve.
+    const xin = sc.spec.xfIn ?? XF, xout = sc.spec.xfOut ?? XF;
+    const vis = t >= start - xin && t < end + xout;
     if (!vis) { sc.el.style.opacity = 0; continue; }
-    const fadeIn = clamp01((t - (start - XF)) / XF), fadeOut = 1 - clamp01((t - end) / XF);
-    const a = sc.spec.i === 0 ? (t < end ? 1 : fadeOut) : Math.min(fadeIn, sc.spec.i === scenes.length - 1 ? 1 : fadeOut);
+    const fadeIn = xin ? clamp01((t - (start - xin)) / xin) : (t >= start ? 1 : 0);
+    const fadeOut = xout ? 1 - clamp01((t - end) / xout) : (t < end ? 1 : 0);
+    const a = Math.min(sc.spec.i === 0 ? 1 : fadeIn, sc.spec.i === scenes.length - 1 ? 1 : fadeOut);
     sc.el.style.opacity = a;
-    sc.el.style.transform = `scale(${1.025 - 0.025 * ease(fadeIn)})`;
+    sc.el.style.transform = `scale(${xin ? 1.025 - 0.025 * ease(fadeIn) : 1})`;
     const local = t - start, dur = end - start;
     if (sc.spec.type === 'screen') poseScreen(sc, local, dur);
     else if (sc.spec.type === 'card') poseCard(sc, local);

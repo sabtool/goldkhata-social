@@ -10,9 +10,9 @@ const cta = (c) => ({ type: 'cta', line: c.line, l1: c.l1, l2: c.l2, vo: c.vo })
 const reels = [
   { id: '2026-09-24_reel-pledge-card', cta: TRIAL, scenes: [
     { type: 'hook', kicker: 'At the counter', text: 'New loan to printed pledge card in', accent: '40 seconds.', vo: 'New gold loan to a printed pledge card, in forty seconds. Watch.' },
-    { type: 'screen', label: '1 · Customer', capture: { path: '/loans/new', focus: 'Customer' }, vo: 'Pick the customer. Their photo and KYC come up with them.' },
-    { type: 'screen', label: '2 · Ornaments', capture: { path: '/loans/new', focus: 'Ornament Details' }, vo: "Add the ornaments and their weight. The loan amount is worked out at today's gold rate." },
-    { type: 'screen', label: '3 · Print', capture: { path: '/loans/:id', focus: 'Loan record' }, vo: 'Save, and the pledge card prints on your own letterhead, ready to sign.' },
+    { type: 'screen', label: '1 · Customer', capture: { path: '/loans/new', focus: 'Select Customer' }, vo: 'Pick the customer. Their photo and KYC come up with them.' },
+    { type: 'screen', label: '2 · Ornaments', capture: { path: '/loans/new', focus: 'Ornament Details', grow: true, prep: [{ type: ['input[placeholder*="Search"]', 'Harish'], wait: 1800 }, { click: 'Harish Kumar' }, { click: 'Next' }] }, vo: "Add the ornaments and their weight. The loan amount is worked out at today's gold rate." },
+    { type: 'screen', label: '3 · Print', capture: { path: '/loans/:id', focus: 'Pledge Card' }, vo: 'Save, and the pledge card prints on your own letterhead, ready to sign.' },
     { type: 'proof', text: 'Your letterhead.', accent: 'One press.' },
   ] },
   { id: '2026-09-26_reel-upi-qr', cta: WA, scenes: [
