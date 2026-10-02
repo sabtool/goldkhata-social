@@ -217,8 +217,19 @@
       "caption": "Switching software sounds like weeks of typing. It isn't.\n\nTry GoldKhata free for 30 days. Our team moves your existing customers and running loans in for you, trains your staff, and gives your firm its own web address. No card needed to start.\n\nStart your free 30-day trial → goldkhata.com\n\n#goldloan #girvi #pawnbroker #goldloansoftware #smallbusinessindia #karnataka #bengaluru #mysuru #hubli #mangaluru #freetrial",
       "pillar": "offer",
       "approved": true,
-      "posted": {},
-      "status": "queued"
+      "posted": {
+        "facebook": {
+          "id": "1251865308016383_122116505043450208",
+          "at": "2026-10-02T14:00:09.543Z"
+        }
+      },
+      "status": "queued",
+      "errors": {
+        "instagram": {
+          "message": "Graph API POST /v26.0/17841465341938878/media failed: User access is restricted (code 25)",
+          "at": "2026-10-02T14:00:06.663Z"
+        }
+      }
     },
     {
       "id": "2026-10-04_own-address",
