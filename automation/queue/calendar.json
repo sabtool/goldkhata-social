@@ -221,15 +221,14 @@
         "facebook": {
           "id": "1251865308016383_122116505043450208",
           "at": "2026-10-02T14:00:09.543Z"
+        },
+        "instagram": {
+          "id": "17951413869272544",
+          "at": "2026-10-02T20:04:50.833Z"
         }
       },
-      "status": "queued",
-      "errors": {
-        "instagram": {
-          "message": "Graph API POST /v26.0/17841465341938878/media failed: User access is restricted (code 25)",
-          "at": "2026-10-02T15:22:47.717Z"
-        }
-      }
+      "status": "posted",
+      "errors": {}
     },
     {
       "id": "2026-10-04_own-address",
