@@ -18,7 +18,7 @@ The queue is watching. Your records are silent.
 
 GoldKhata keeps every receipt against the loan, down to the minute, and sends the customer his copy on WhatsApp from your firm's own number.
 
-Questions? WhatsApp us → wa.me/918804888883
+Questions? WhatsApp us → wa.me/message/L7XOHJJU2ZLIO1
 #goldloan #girvi
 ```
 
@@ -36,7 +36,7 @@ Slide 4, cream background. Small heading: And the customer? Headline: He gets th
 
 **Alt text · photo 4**
 
-Slide 6, cream background. Headline: Never argue over a payment again. Text: Works on any phone. Your data stays yours. Button: Questions? WhatsApp us, wa.me/918804888883. Website: goldkhata.com.
+Slide 6, cream background. Headline: Never argue over a payment again. Text: Works on any phone. Your data stays yours. Button: Questions? WhatsApp us, wa.me/message/L7XOHJJU2ZLIO1. Website: goldkhata.com.
 
 ## Mon 21 Sep (251/280 characters)
 
@@ -68,13 +68,13 @@ Customers trust a message from a number they already know.
 
 GoldKhata sends payment receipts and due reminders from your firm's own WhatsApp number, in your firm's name.
 
-Questions? WhatsApp us → wa.me/918804888883
+Questions? WhatsApp us → wa.me/message/L7XOHJJU2ZLIO1
 #goldloan #whatsappbusiness
 ```
 
 **Alt text**
 
-GoldKhata post, navy background. Small heading: WhatsApp. Headline: Messages from your number. Not a stranger’s. Subline: Receipts and reminders, automatic. A WhatsApp chat from Demo Gold Finance shows two messages: “Reminder: interest on GL-1042 is due on 5 Oct.” at 10:00 am, and “Payment received: ₹4,500 for GL-1042. Thank you!” at 7:42 pm. Button: Questions? WhatsApp us, wa.me/918804888883.
+GoldKhata post, navy background. Small heading: WhatsApp. Headline: Messages from your number. Not a stranger’s. Subline: Receipts and reminders, automatic. A WhatsApp chat from Demo Gold Finance shows two messages: “Reminder: interest on GL-1042 is due on 5 Oct.” at 10:00 am, and “Payment received: ₹4,500 for GL-1042. Thank you!” at 7:42 pm. Button: Questions? WhatsApp us, wa.me/message/L7XOHJJU2ZLIO1.
 
 ## Fri 25 Sep (226/280 characters)
 
@@ -87,13 +87,13 @@ A ₹500 gap found tonight is a question. Found next month, it's a mystery.
 
 GoldKhata's day-close tally checks the drawer against the cash book every evening.
 
-Questions? WhatsApp us → wa.me/918804888883
+Questions? WhatsApp us → wa.me/message/L7XOHJJU2ZLIO1
 #goldloan #girvi
 ```
 
 **Alt text**
 
-GoldKhata post, cream background. Small heading: Day-close tally. Headline: The drawer should match the book at 8 pm. An app card titled Day close, 8:00 pm, shows Cash as per book ₹1,24,500 and Counted in the drawer ₹1,24,000, with a red line: Short ₹500. Button: Questions? WhatsApp us, wa.me/918804888883.
+GoldKhata post, cream background. Small heading: Day-close tally. Headline: The drawer should match the book at 8 pm. An app card titled Day close, 8:00 pm, shows Cash as per book ₹1,24,500 and Counted in the drawer ₹1,24,000, with a red line: Short ₹500. Button: Questions? WhatsApp us, wa.me/message/L7XOHJJU2ZLIO1.
 
 ## Mon 28 Sep (250/280 characters)
 
@@ -106,13 +106,13 @@ The question your counter hears all day can answer itself.
 
 With GoldKhata's customer portal, customers sign in with a WhatsApp code and see their principal and interest up to today.
 
-Questions? WhatsApp us → wa.me/918804888883
+Questions? WhatsApp us → wa.me/message/L7XOHJJU2ZLIO1
 #goldloan #girvi
 ```
 
 **Alt text**
 
-GoldKhata post, navy background. Small heading: Customer portal. Headline: “How much do I owe?” Answered without a phone call. A phone screen from Demo Gold Finance titled Your loans shows loan GL-1042, Active, with Principal ₹40,000 and Interest to today ₹2,240, and a link: Payments received. Button: Questions? WhatsApp us, wa.me/918804888883.
+GoldKhata post, navy background. Small heading: Customer portal. Headline: “How much do I owe?” Answered without a phone call. A phone screen from Demo Gold Finance titled Your loans shows loan GL-1042, Active, with Principal ₹40,000 and Interest to today ₹2,240, and a link: Payments received. Button: Questions? WhatsApp us, wa.me/message/L7XOHJJU2ZLIO1.
 
 ## Wed 30 Sep (222/280 characters)
 
@@ -163,13 +163,13 @@ First impressions happen at the counter.
 
 Save the loan in GoldKhata and print the pledge card on your own letterhead, ready to sign. No typing the same thing twice.
 
-Questions? WhatsApp us → wa.me/918804888883
+Questions? WhatsApp us → wa.me/message/L7XOHJJU2ZLIO1
 #goldloan #girvi
 ```
 
 **Alt text**
 
-GoldKhata post, cream background. Small heading: Pledge cards. Headline: Pledge card, printed. Your name on top. A printed pledge card with the letterhead Demo Gold Finance lists Loan no. GL-1042, Ornaments: Chain, Ring, Gross weight 24.6 g, Loan amount ₹60,000, and a line for the customer signature. Button: Questions? WhatsApp us, wa.me/918804888883.
+GoldKhata post, cream background. Small heading: Pledge cards. Headline: Pledge card, printed. Your name on top. A printed pledge card with the letterhead Demo Gold Finance lists Loan no. GL-1042, Ornaments: Chain, Ring, Gross weight 24.6 g, Loan amount ₹60,000, and a line for the customer signature. Button: Questions? WhatsApp us, wa.me/message/L7XOHJJU2ZLIO1.
 
 ## Wed 7 Oct (219/280 characters)
 
@@ -182,13 +182,13 @@ GoldKhata post, cream background. Small heading: Pledge cards. Headline: Pledge 
 
 GoldKhata makes the UPI QR for the exact amount due. The customer only scans and pays.
 
-Questions? WhatsApp us → wa.me/918804888883
+Questions? WhatsApp us → wa.me/message/L7XOHJJU2ZLIO1
 #goldloan #upi
 ```
 
 **Alt text**
 
-GoldKhata post, navy background. Small heading: UPI collection. Headline: The QR already knows the amount. Subline: No more wrong figures. A card shows an illustrated QR code next to “Scan to pay, ₹3,480, Loan GL-1042 · Interest” and a green label: Exact amount. Button: Questions? WhatsApp us, wa.me/918804888883.
+GoldKhata post, navy background. Small heading: UPI collection. Headline: The QR already knows the amount. Subline: No more wrong figures. A card shows an illustrated QR code next to “Scan to pay, ₹3,480, Loan GL-1042 · Interest” and a green label: Exact amount. Button: Questions? WhatsApp us, wa.me/message/L7XOHJJU2ZLIO1.
 
 ## Fri 9 Oct (216/280 characters)
 
@@ -220,13 +220,13 @@ Some money goes missing without anyone taking it.
 
 GoldKhata checks your bank statement against your book: entered but never received, and received but never entered.
 
-Questions? WhatsApp us → wa.me/918804888883
+Questions? WhatsApp us → wa.me/message/L7XOHJJU2ZLIO1
 #goldloan #girvi
 ```
 
 **Alt text**
 
-GoldKhata post, navy background. Small heading: Bank reconciliation. Headline: Entered but never received? Found. Subline: And received but never entered. An app card titled Bank vs book, September, lists ₹12,000 UPI on 14 Sep marked Matched, ₹8,500 UPI on 15 Sep marked Not in bank, and ₹5,000 Bank on 16 Sep marked Not in book. Button: Questions? WhatsApp us, wa.me/918804888883.
+GoldKhata post, navy background. Small heading: Bank reconciliation. Headline: Entered but never received? Found. Subline: And received but never entered. An app card titled Bank vs book, September, lists ₹12,000 UPI on 14 Sep marked Matched, ₹8,500 UPI on 15 Sep marked Not in bank, and ₹5,000 Bank on 16 Sep marked Not in book. Button: Questions? WhatsApp us, wa.me/message/L7XOHJJU2ZLIO1.
 
 ## Wed 14 Oct (228/280 characters)
 

@@ -3,7 +3,7 @@
 // "capture" tells engine/capture.mjs which demo screen to shoot and what to ring.
 import { writeFileSync, existsSync, readFileSync } from 'node:fs';
 
-const WA = { line: 'Questions? <em>WhatsApp us.</em>', l1: 'WhatsApp us', l2: 'wa.me/918804888883', vo: 'Questions? WhatsApp us.' };
+const WA = { line: 'Questions? <em>WhatsApp us.</em>', l1: 'WhatsApp us', l2: 'wa.me/message/L7XOHJJU2ZLIO1', vo: 'Questions? WhatsApp us.' };
 const TRIAL = { line: 'Try it <em>free</em> for 30 days.', l1: 'Free for 30 days', l2: 'Start your trial', vo: 'Try Gold Khaataa free for thirty days.' };
 const cta = (c) => ({ type: 'cta', line: c.line, l1: c.l1, l2: c.l2, vo: c.vo });
 
