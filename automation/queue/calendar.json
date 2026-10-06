@@ -274,7 +274,7 @@
       "pillar": "pain-feature",
       "approved": false,
       "posted": {},
-      "status": "queued"
+      "status": "skipped_stale"
     },
     {
       "id": "2026-10-07_upi-qr",
