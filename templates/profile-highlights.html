@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GoldKhata — profile highlight covers and story frames (Oct 2026)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=block">
+<link rel="stylesheet" href="brand.css">
+<style>
+  /* story size: 1080x1920, content kept inside Instagram's safe area */
+  html, body { height: 1920px; }
+  .post { padding: 250px 86px 268px; }
+  .post::before { inset: 224px 34px 244px; }
+  h1 { font-size: 92px; }
+  .sub { font-size: 40px; }
+  .eyebrow { margin: 44px 0 22px; }
+
+  /* highlight covers: only the centre circle survives Instagram's crop */
+  .cover { padding: 0; align-items: center; justify-content: center; }
+  .cover::before { display: none; }
+  .ring { width: 620px; height: 620px; border-radius: 50%; display: grid; place-items: center;
+          border: 8px solid rgba(245,197,66,.55);
+          background: radial-gradient(circle at 50% 42%, rgba(212,160,23,.16), transparent 70%); }
+  .glyph { font: 700 300px/1 "Playfair Display", serif; color: #F5C542; font-variant-numeric: lining-nums; }
+  .ph { width: 180px; height: 310px; border: 11px solid #F5C542; border-radius: 30px; position: relative; }
+  .ph::before { content: ""; position: absolute; top: 20px; left: 50%; transform: translateX(-50%);
+                width: 58px; height: 9px; border-radius: 5px; background: #F5C542; }
+  .ph::after { content: ""; position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%);
+               width: 84px; height: 9px; border-radius: 5px; background: #F5C542; }
+  .bub { width: 310px; height: 236px; border: 11px solid #F5C542; border-radius: 54px; position: relative; }
+  .bub i { position: absolute; top: 50%; width: 28px; height: 28px; border-radius: 50%;
+           background: #F5C542; transform: translateY(-50%); }
+  .bub::after { content: ""; position: absolute; left: 52px; bottom: -52px;
+                border: 0 solid transparent; border-bottom-width: 56px; border-left-width: 58px;
+                border-bottom-color: #F5C542; }
+  .dl { width: 270px; height: 310px; position: relative; }
+  .dl b { position: absolute; left: 50%; top: 0; transform: translateX(-50%);
+          width: 18px; height: 160px; background: #F5C542; border-radius: 9px; }
+  .dl s { position: absolute; left: 50%; top: 118px; transform: translateX(-50%) rotate(45deg);
+          width: 112px; height: 112px; border-right: 18px solid #F5C542; border-bottom: 18px solid #F5C542;
+          border-radius: 8px; }
+  .dl u { position: absolute; left: 0; bottom: 0; width: 270px; height: 18px;
+          background: #F5C542; border-radius: 9px; }
+
+  /* illustration parts, same as the feed posts */
+  .chat { width: 100%; border-radius: 30px; overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,.38); }
+  .chat-head { background: #075E54; color: #fff; display: flex; align-items: center; gap: 18px; padding: 18px 30px; font: 700 31px Inter; }
+  .avatar { width: 62px; height: 62px; border-radius: 50%; display: grid; place-items: center;
+            background: linear-gradient(135deg, #F5C542, #B8860B); color: #12233F; font: 800 26px Inter; flex-shrink: 0; }
+  .chat-body { background: #EFEAE2; padding: 20px 28px 24px; display: flex; flex-direction: column; gap: 14px; }
+  .day { align-self: center; background: #fff; color: #5B6B84; font: 600 23px Inter; padding: 8px 18px; border-radius: 12px; }
+  .bubble { background: #fff; color: #12233F; align-self: flex-start; max-width: 96%;
+            font: 500 30px/1.35 Inter; padding: 16px 24px 10px; border-radius: 4px 22px 22px 22px;
+            box-shadow: 0 1px 1px rgba(0,0,0,.08); }
+  .bubble .t { display: block; text-align: right; color: #8696A0; font: 500 22px Inter; margin-top: 6px; }
+  .thirty { text-align: center; }
+  .thirty .n { font: 700 320px/1 "Playfair Display", serif; font-variant-numeric: lining-nums;
+               background: linear-gradient(170deg, #F5C542, #B8860B); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .thirty .d { font: 700 36px Inter; letter-spacing: .3em; text-transform: uppercase; color: #fff; margin-top: 8px; }
+  .perks { display: flex; gap: 18px; justify-content: center; margin-top: 46px; flex-wrap: wrap; }
+  .perk { font: 600 30px Inter; color: #fff; padding: 16px 28px; border-radius: 999px; border: 2px solid rgba(245,197,66,.55); }
+  .cream .thirty .d { color: #12233F; }
+  .cream .perk { color: #12233F; border-color: rgba(184,134,11,.5); }
+  .paper { width: 92%; background: #fff; color: #12233F; padding: 44px 52px 40px; border-radius: 10px;
+           transform: rotate(-2deg); box-shadow: 0 26px 60px rgba(18,35,63,.18), 0 0 0 2px #EFE3C8; }
+  .lh { font: 700 42px "Playfair Display", serif; letter-spacing: .1em; text-align: center; }
+  .paper .row { padding: 16px 0; font-size: 32px; }
+  .lh-rule { height: 4px; background: linear-gradient(90deg, #D4A017, #F5C542); margin: 16px auto 18px; width: 70%; border-radius: 2px; }
+  .doc-title { text-align: center; font: 700 25px Inter; letter-spacing: .3em; color: #5B6B84; margin-bottom: 8px; }
+  .sign { margin-top: 26px; padding-top: 12px; border-top: 2px dashed #C9CED8; width: 55%; font: 500 24px Inter; color: #5B6B84; }
+  .browser { width: 100%; border-radius: 26px; overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,.34); }
+  .bar { background: #EEF0F4; padding: 24px 28px; display: flex; align-items: center; gap: 20px; }
+  .lights { display: flex; gap: 11px; } .lights i { width: 18px; height: 18px; border-radius: 50%; background: #C9CED8; display: block; }
+  .url { flex: 1; background: #fff; border-radius: 999px; padding: 14px 26px; font: 600 30px Inter; color: #12233F; }
+  .url b { color: #B8860B; }
+  .pane { background: #fff; color: #12233F; padding: 40px 48px 46px; }
+  .pane .firm { font: 700 44px "Playfair Display", serif; }
+  .pane .muted { color: #5B6B84; font: 500 30px Inter; margin-top: 10px; }
+  .card .row:first-of-type { border-top: 0; }
+  .card-title { font-size: 32px; }
+  .row { font-size: 32px; }
+  .chip { font-size: 24px; }
+</style>
+</head>
+<body>
+
+<!-- ───────────── highlight covers (crop to the centre circle) ───────────── -->
+<section class="post navy cover" id="c-trial"><div class="ring"><div class="glyph">30</div></div></section>
+<section class="post navy cover" id="c-how"><div class="ring"><div class="ph"></div></div></section>
+<section class="post navy cover" id="c-rules"><div class="ring"><div class="glyph">%</div></div></section>
+<section class="post navy cover" id="c-wa"><div class="ring"><div class="bub"><i style="left:62px"></i><i style="left:139px"></i><i style="left:216px"></i></div></div></section>
+<section class="post navy cover" id="c-data"><div class="ring"><div class="dl"><b></b><s></s><u></u></div></div></section>
+<section class="post navy cover" id="c-price"><div class="ring"><div class="glyph">₹</div></div></section>
+
+<!-- ───────────── 1 · Free trial ───────────── -->
+<section class="post navy" id="t1">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Free trial</div>
+  <h1>30 days free. <em>No card.</em></h1>
+  <p class="sub">Every feature, on your own web address.</p>
+  <div class="art">
+    <div class="thirty">
+      <div class="n">30</div>
+      <div class="d">Days free</div>
+      <div class="perks"><span class="perk">yourfirm.goldkhata.com</span><span class="perk">Staff training included</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<section class="post navy" id="t2">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Onboarding</div>
+  <h1>We bring your <em>old records</em> in.</h1>
+  <p class="sub">From Excel or your current software. Our team does it.</p>
+  <div class="art">
+    <div class="card">
+      <div class="card-title">Brought in for you <span class="chip ok">Done by us</span></div>
+      <div class="row"><span class="k">Customers and KYC</span><span class="v ok">✓</span></div>
+      <div class="row"><span class="k">Running loans and ornaments</span><span class="v ok">✓</span></div>
+      <div class="row"><span class="k">Payment history</span><span class="v ok">✓</span></div>
+      <div class="row"><span class="k">Your interest method</span><span class="v ok">✓</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<section class="post navy" id="t3">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Day one</div>
+  <h1>Your own <em>address.</em></h1>
+  <p class="sub">Ready the same day. Opens on any phone or computer.</p>
+  <div class="art">
+    <div class="browser">
+      <div class="bar"><span class="lights"><i></i><i></i><i></i></span><span class="url"><b>yourfirm</b>.goldkhata.com</span></div>
+      <div class="pane">
+        <div class="firm">Demo Gold Finance</div>
+        <div class="muted">Today's collection · ₹1,24,500</div>
+        <div class="muted">Running loans · 318</div>
+      </div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<section class="post navy" id="t4">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">When the 30 days end</div>
+  <h1>Nothing <em>auto-charges.</em></h1>
+  <p class="sub">The account pauses. Every record stays, and downloads.</p>
+  <div class="art">
+    <div class="card">
+      <div class="card-title">Day 31 <span class="chip">No card on file</span></div>
+      <div class="row"><span class="k">Account</span><span class="v">Pauses</span></div>
+      <div class="row"><span class="k">Your records</span><span class="v ok">Safe</span></div>
+      <div class="row"><span class="k">Excel download</span><span class="v ok">Any time</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<!-- ───────────── 2 · How it works ───────────── -->
+<section class="post cream" id="h1">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">At the counter</div>
+  <h1>New loan in <em>40 seconds.</em></h1>
+  <p class="sub">Customer, ornaments, weight. The rest is worked out.</p>
+  <div class="art">
+    <div class="card">
+      <div class="card-title">New gold loan <span class="chip">Demo Gold Finance</span></div>
+      <div class="row"><span class="k">Customer</span><span class="v">Harish Kumar · C0117</span></div>
+      <div class="row"><span class="k">Ornaments</span><span class="v">2 items · 24.6 g</span></div>
+      <div class="row"><span class="k">Purity</span><span class="v">22K</span></div>
+      <div class="row"><span class="k">At today's gold rate</span><span class="v ok">✓</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<section class="post cream" id="h2">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Print</div>
+  <h1>Pledge receipt on <em>your letterhead.</em></h1>
+  <p class="sub">Ready to sign, from the printer you already have.</p>
+  <div class="art">
+    <div class="paper">
+      <div class="lh">DEMO GOLD FINANCE</div>
+      <div class="lh-rule"></div>
+      <div class="doc-title">PLEDGE RECEIPT</div>
+      <div class="row"><span class="k">Loan no.</span><span class="v">GL-1042</span></div>
+      <div class="row"><span class="k">Customer</span><span class="v">Harish Kumar</span></div>
+      <div class="row"><span class="k">Ornaments</span><span class="v">2 items · 24.6 g · 22K</span></div>
+      <div class="row"><span class="k">Date</span><span class="v">8 October 2026</span></div>
+      <div class="sign">Customer signature</div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<section class="post cream" id="h3">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Collection</div>
+  <h1>Cash, UPI, or <em>both.</em></h1>
+  <p class="sub">The QR carries the exact amount, so no figure goes wrong.</p>
+  <div class="art">
+    <div class="card">
+      <div class="card-title">Payment · GL-1042 <span class="chip ok">Receipt sent</span></div>
+      <div class="row"><span class="k">Interest due</span><span class="v">₹4,500</span></div>
+      <div class="row"><span class="k">Cash</span><span class="v">₹2,000</span></div>
+      <div class="row"><span class="k">UPI (QR for ₹2,500)</span><span class="v">₹2,500</span></div>
+      <div class="row"><span class="k">On WhatsApp</span><span class="v ok">✓</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<section class="post cream" id="h4">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Closing time</div>
+  <h1>Book cash against <em>the drawer.</em></h1>
+  <p class="sub">A ₹500 gap shows tonight, not next month.</p>
+  <div class="art">
+    <div class="card">
+      <div class="card-title">Day close · 8 Oct <span class="chip warn">Check</span></div>
+      <div class="row"><span class="k">Book cash</span><span class="v">₹28,400</span></div>
+      <div class="row"><span class="k">Counted in the drawer</span><span class="v">₹27,900</span></div>
+      <div class="row"><span class="k">Difference</span><span class="v bad">−₹500</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<!-- ───────────── 3 · Your rules ───────────── -->
+<section class="post navy" id="r1">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Interest</div>
+  <h1>₹4,950, or <em>₹4,500?</em></h1>
+  <p class="sub">Whose method decides — a textbook, or yours?</p>
+  <div class="art">
+    <div class="card">
+      <div class="card-title">Same loan, two answers</div>
+      <div class="row"><span class="k">Textbook formula</span><span class="v">₹4,950</span></div>
+      <div class="row"><span class="k">Your firm's method</span><span class="v ok">₹4,500</span></div>
+      <div class="row"><span class="k">GoldKhata follows</span><span class="v ok">Yours</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<section class="post navy" id="r2">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Set it once</div>
+  <h1>Your business. <em>Your rules.</em></h1>
+  <p class="sub">First month, part month, compounding. Your way.</p>
+  <div class="art">
+    <div class="card">
+      <div class="card-title">Interest rules <span class="chip">Your settings</span></div>
+      <div class="row"><span class="k">First month</span><span class="v" style="display:flex;align-items:center;gap:18px">Deducted at disbursal <i class="toggle"></i></span></div>
+      <div class="row"><span class="k">Part month</span><span class="v">Half month up to 15 days</span></div>
+      <div class="row"><span class="k">Compounding</span><span class="v">Yearly</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<section class="post navy" id="r3">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Everywhere</div>
+  <h1>Every screen <em>follows.</em></h1>
+  <p class="sub">Set it once and stop re-checking by hand.</p>
+  <div class="art">
+    <div class="card">
+      <div class="card-title">Uses your method</div>
+      <div class="row"><span class="k">Loan page</span><span class="v ok">✓</span></div>
+      <div class="row"><span class="k">Release and closure bill</span><span class="v ok">✓</span></div>
+      <div class="row"><span class="k">Notices</span><span class="v ok">✓</span></div>
+      <div class="row"><span class="k">Reports and ledger</span><span class="v ok">✓</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<!-- ───────────── 4 · WhatsApp ───────────── -->
+<section class="post cream" id="w1">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">WhatsApp</div>
+  <h1>From <em>your number.</em> Not a stranger's.</h1>
+  <p class="sub">The receipt goes out as the payment is taken.</p>
+  <div class="art">
+    <div class="chat">
+      <div class="chat-head"><span class="avatar">DG</span>Demo Gold Finance</div>
+      <div class="chat-body">
+        <span class="day">Today</span>
+        <div class="bubble">Payment received: <b>₹4,500</b> for GL-1042. Thank you!<span class="t">7:42 pm</span></div>
+      </div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Questions? WhatsApp us</div><div class="l2">wa.me/918804888883</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<section class="post cream" id="w2">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Automatic</div>
+  <h1>Four messages you <em>never type.</em></h1>
+  <p class="sub">They go out on time, even on a busy day.</p>
+  <div class="art">
+    <div class="card">
+      <div class="card-title">From your own number</div>
+      <div class="row"><span class="k">Payment receipt</span><span class="v ok">✓</span></div>
+      <div class="row"><span class="k">Interest due reminder</span><span class="v ok">✓</span></div>
+      <div class="row"><span class="k">Weekly gold rate</span><span class="v ok">✓</span></div>
+      <div class="row"><span class="k">Birthday greeting</span><span class="v ok">✓</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Questions? WhatsApp us</div><div class="l2">wa.me/918804888883</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<section class="post cream" id="w3">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Fewer calls</div>
+  <h1>“How much do <em>I owe?”</em></h1>
+  <p class="sub">The answer reaches them before they ring the shop.</p>
+  <div class="art">
+    <div class="chat">
+      <div class="chat-head"><span class="avatar">DG</span>Demo Gold Finance</div>
+      <div class="chat-body">
+        <span class="day">1 November</span>
+        <div class="bubble">Your loan GL-1042: interest of <b>₹4,500</b> is due on 5 November.<span class="t">10:00 am</span></div>
+        <div class="bubble">This week's gold rate from Demo Gold Finance is updated in your account.<span class="t">10:01 am</span></div>
+      </div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Questions? WhatsApp us</div><div class="l2">wa.me/918804888883</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<!-- ───────────── 5 · Your data ───────────── -->
+<section class="post navy" id="d1">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">A fair question</div>
+  <h1>What if you want to <em>leave?</em></h1>
+  <p class="sub">Then you should be able to walk out with everything.</p>
+  <div class="art">
+    <div class="card">
+      <div class="card-title">No lock-in</div>
+      <div class="row"><span class="k">Notice period</span><span class="v">None</span></div>
+      <div class="row"><span class="k">Your records</span><span class="v ok">Yours</span></div>
+      <div class="row"><span class="k">Download them</span><span class="v ok">Any time</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<section class="post navy" id="d2">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Excel export</div>
+  <h1>One tap. <em>Every record.</em></h1>
+  <p class="sub">Customers, loans, payments, ornaments. One file.</p>
+  <div class="art">
+    <div class="card">
+      <div class="card-title">Export <span class="chip ok">One file</span></div>
+      <div class="row"><span class="k">Customers and KYC</span><span class="v">.xlsx</span></div>
+      <div class="row"><span class="k">Loans and ornaments</span><span class="v">.xlsx</span></div>
+      <div class="row"><span class="k">Payments and receipts</span><span class="v">.xlsx</span></div>
+      <div class="row"><span class="k">Ready in</span><span class="v ok">Seconds</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<section class="post navy" id="d3">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Your address</div>
+  <h1>Your firm's name <em>on the door.</em></h1>
+  <p class="sub">Your own web address, and your data stays yours.</p>
+  <div class="art">
+    <div class="browser">
+      <div class="bar"><span class="lights"><i></i><i></i><i></i></span><span class="url"><b>yourfirm</b>.goldkhata.com</span></div>
+      <div class="pane">
+        <div class="firm">Your Gold Finance</div>
+        <div class="muted">Only your staff can sign in</div>
+        <div class="muted">Your records, never sold or shared</div>
+      </div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<!-- ───────────── 6 · Pricing (HOLD until the owner confirms the figures) ───────────── -->
+<section class="post cream" id="p1">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Pricing</div>
+  <h1>Three plans, <em>no surprises.</em></h1>
+  <p class="sub">Pick what your counter needs. Change it later.</p>
+  <div class="art">
+    <div class="card">
+      <div class="card-title">Per month, plus GST <span class="chip">All plans</span></div>
+      <div class="row"><span class="k">Starter</span><span class="v">₹499</span></div>
+      <div class="row"><span class="k">Pro</span><span class="v">₹699</span></div>
+      <div class="row"><span class="k">Advanced</span><span class="v">₹999</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<section class="post cream" id="p2">
+  <header><img class="logo" src="brand/goldkhata-horizontal.png" alt="GoldKhata"></header>
+  <div class="eyebrow">Yearly</div>
+  <h1>Pay yearly, <em>two months free.</em></h1>
+  <p class="sub">₹4,999 to ₹9,999 a year, plus GST. Introductory offer.</p>
+  <div class="art">
+    <div class="card">
+      <div class="card-title">Yearly, plus GST <span class="chip ok">2 months free</span></div>
+      <div class="row"><span class="k">Starter</span><span class="v">₹4,999</span></div>
+      <div class="row"><span class="k">Pro</span><span class="v">₹6,999</span></div>
+      <div class="row"><span class="k">Advanced</span><span class="v">₹9,999</span></div>
+    </div>
+  </div>
+  <footer><div class="cta"><div class="l1">Free for 30 days</div><div class="l2">Start your trial</div></div><div class="site">goldkhata.com</div></footer>
+</section>
+
+<script>
+  const id = location.hash.slice(1) || "c-trial";
+  const el = document.getElementById(id);
+  el.style.display = "flex";
+  if (el.classList.contains("cover")) el.style.display = "grid", el.style.placeItems = "center";
+</script>
+</body>
+</html>

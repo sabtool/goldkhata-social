@@ -86,5 +86,20 @@ export async function postInstagram(item) {
     return publish(id);
   }
 
-  throw new Error(`Unknown format "${item.format}" for Instagram (use carousel | image | reel)`);
+  // Stories carry no caption and vanish in 24h; one item may hold a short burst of frames.
+  if (item.format === 'story') {
+    let last;
+    for (const rel of item.assets) {
+      const { id } = await graph(`${GRAPH}/${igUser()}/media`, {
+        method: 'POST',
+        params: { media_type: 'STORIES', image_url: assetUrl(requireJpeg(rel)) },
+      });
+      await waitUntilReady(id, { tries: 12, intervalMs: 5_000 });
+      last = await publish(id);
+      log(`  instagram: story ${item.assets.indexOf(rel) + 1}/${item.assets.length}`);
+    }
+    return last;
+  }
+
+  throw new Error(`Unknown format "${item.format}" for Instagram (use carousel | image | reel | story)`);
 }

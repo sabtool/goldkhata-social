@@ -274,7 +274,8 @@
       "pillar": "pain-feature",
       "approved": false,
       "posted": {},
-      "status": "skipped_stale"
+      "status": "skipped_stale",
+      "replaced_by": "2026-10-13_pledge-receipt"
     },
     {
       "id": "2026-10-07_upi-qr",
@@ -305,6 +306,26 @@
       "errors": {}
     },
     {
+      "id": "2026-10-09_story-free-trial",
+      "date": "2026-10-09",
+      "time": "11:00",
+      "platforms": [
+        "instagram"
+      ],
+      "format": "story",
+      "assets": [
+        "output/profile/01-free-trial-1.jpg",
+        "output/profile/01-free-trial-2.jpg",
+        "output/profile/01-free-trial-3.jpg",
+        "output/profile/01-free-trial-4.jpg"
+      ],
+      "caption": "Highlight frames: free trial (stories carry no caption)",
+      "pillar": "profile",
+      "approved": true,
+      "posted": {},
+      "status": "queued"
+    },
+    {
       "id": "2026-10-09_notices",
       "date": "2026-10-09",
       "time": "19:30",
@@ -318,6 +339,46 @@
       ],
       "caption": "The paper trail that protects you should build itself.\n\nGoldKhata prints your auction and final notices, and the Speed Post consignment number is saved against each one. Months later you can still show exactly what was sent, and when.\n\nStart your free 30-day trial → goldkhata.com\n\n#goldloan #girvi #pawnbroker #goldloansoftware #smallbusinessindia #karnataka #bengaluru #mysuru #hubli #speedpost #indiapost",
       "pillar": "education",
+      "approved": true,
+      "posted": {},
+      "status": "queued",
+      "caption_instagram": "A customer says the notice never came. Can you prove it did?\n\nYou can. GoldKhata prints your auction and final notices, and it saves the Speed Post consignment number against that loan with the date it went out.\n\nSix months on, you've still got it. One tap.\n\nIt's gold loan software that keeps your paper trail without you thinking about it.\n\nFree 30-day trial: link in bio.\n\n#goldloan #goldloansoftware #pawnbroker #girvi #speedpost"
+    },
+    {
+      "id": "2026-10-10_story-how-it-works",
+      "date": "2026-10-10",
+      "time": "11:00",
+      "platforms": [
+        "instagram"
+      ],
+      "format": "story",
+      "assets": [
+        "output/profile/02-how-it-works-1.jpg",
+        "output/profile/02-how-it-works-2.jpg",
+        "output/profile/02-how-it-works-3.jpg",
+        "output/profile/02-how-it-works-4.jpg"
+      ],
+      "caption": "Highlight frames: how it works (stories carry no caption)",
+      "pillar": "profile",
+      "approved": true,
+      "posted": {},
+      "status": "queued"
+    },
+    {
+      "id": "2026-10-11_story-your-rules",
+      "date": "2026-10-11",
+      "time": "11:00",
+      "platforms": [
+        "instagram"
+      ],
+      "format": "story",
+      "assets": [
+        "output/profile/03-your-rules-1.jpg",
+        "output/profile/03-your-rules-2.jpg",
+        "output/profile/03-your-rules-3.jpg"
+      ],
+      "caption": "Highlight frames: your rules (stories carry no caption)",
+      "pillar": "profile",
       "approved": true,
       "posted": {},
       "status": "queued"
@@ -338,6 +399,26 @@
       "pillar": "greeting",
       "approved": true,
       "posted": {},
+      "status": "queued",
+      "caption_instagram": "Nine nights of prayer, light and new beginnings.\n\nHappy Navratri.\n\nTo every gold loan firm, to your families, and to the customers who've trusted you for years: may the season bring a busy counter and a steady book, from tonight right through to Vijayadashami on 20 October.\n\nWe're here if you need us.\n\nTeam GoldKhata, gold loan software for firms like yours.\n\nShare this with a firm owner you'd like to wish today.\n\n#navratri #happynavratri #goldloan #pawnbroker #girvi"
+    },
+    {
+      "id": "2026-10-12_story-whatsapp",
+      "date": "2026-10-12",
+      "time": "11:00",
+      "platforms": [
+        "instagram"
+      ],
+      "format": "story",
+      "assets": [
+        "output/profile/04-whatsapp-1.jpg",
+        "output/profile/04-whatsapp-2.jpg",
+        "output/profile/04-whatsapp-3.jpg"
+      ],
+      "caption": "Highlight frames: whatsapp (stories carry no caption)",
+      "pillar": "profile",
+      "approved": true,
+      "posted": {},
       "status": "queued"
     },
     {
@@ -354,6 +435,63 @@
       ],
       "caption": "Some money goes missing without anyone taking it.\n\nGoldKhata checks your bank statement against your book. It finds payments that were entered but never reached the bank, and money that reached the bank but was never entered.\n\nQuestions? WhatsApp us → wa.me/message/L7XOHJJU2ZLIO1\n\n#goldloan #girvi #pawnbroker #goldloansoftware #smallbusinessindia #karnataka #bengaluru #mysuru #mangaluru #reconciliation #accounting",
       "pillar": "pain-feature",
+      "approved": true,
+      "posted": {},
+      "status": "queued",
+      "caption_instagram": "₹2,000 came in by UPI and never made it into your book. Would you know by tonight?\n\nGoldKhata reads your bank statement against your own entries. It finds the payment someone entered that never reached the bank, and the ₹2,000 sitting in the bank with nothing to match it to.\n\nOne screen. Both kinds of gap.\n\nThat's gold loan software that catches it the same day, not at year end.\n\nFree 30-day trial: link in bio.\n\n#goldloan #goldloansoftware #pawnbroker #girvi #upi"
+    },
+    {
+      "id": "2026-10-13_story-your-data",
+      "date": "2026-10-13",
+      "time": "11:00",
+      "platforms": [
+        "instagram"
+      ],
+      "format": "story",
+      "assets": [
+        "output/profile/05-your-data-1.jpg",
+        "output/profile/05-your-data-2.jpg",
+        "output/profile/05-your-data-3.jpg"
+      ],
+      "caption": "Highlight frames: your data (stories carry no caption)",
+      "pillar": "profile",
+      "approved": true,
+      "posted": {},
+      "status": "queued"
+    },
+    {
+      "id": "2026-10-13_pledge-receipt",
+      "date": "2026-10-13",
+      "time": "19:30",
+      "platforms": [
+        "instagram",
+        "facebook"
+      ],
+      "format": "image",
+      "assets": [
+        "output/week-04/2026-10-13_ig_pledge-receipt.jpg"
+      ],
+      "caption_instagram": "The customer's standing right there. How long does your pledge receipt take?\n\nSave the loan in GoldKhata and it prints on your own letterhead: GL-1042, chain and ring, 24.6 grams, ₹60,000, ready to sign.\n\nYou entered those four lines once. Nobody writes them out again.\n\nThat's gold loan software built around what your counter actually hands over.\n\nFree 30-day trial: link in bio.\n\n#goldloan #goldloansoftware #pawnbroker #girvi #pledgereceipt",
+      "caption": "First impressions happen at the counter.\n\nSave the loan in GoldKhata and print the pledge receipt on your own letterhead: customer details, ornaments, weights and loan amount, ready to sign. No typing the same thing twice.\n\nQuestions? WhatsApp us → wa.me/message/L7XOHJJU2ZLIO1\n\n#goldloan #girvi #pawnbroker #goldloansoftware #smallbusinessindia #karnataka #bengaluru #mysuru #hubli #pledgereceipt #goldloanbusiness",
+      "pillar": "pain-feature",
+      "approved": true,
+      "posted": {},
+      "status": "queued"
+    },
+    {
+      "id": "2026-10-14_story-pricing",
+      "date": "2026-10-14",
+      "time": "11:00",
+      "platforms": [
+        "instagram"
+      ],
+      "format": "story",
+      "assets": [
+        "output/profile/06-pricing-1.jpg",
+        "output/profile/06-pricing-2.jpg"
+      ],
+      "caption": "Highlight frames: pricing (stories carry no caption)",
+      "pillar": "profile",
       "approved": true,
       "posted": {},
       "status": "queued"
@@ -374,7 +512,8 @@
       "pillar": "trust",
       "approved": true,
       "posted": {},
-      "status": "queued"
+      "status": "queued",
+      "caption_instagram": "Trust your staff. Still set limits.\n\nFive roles in GoldKhata: owner, manager, cashier, appraiser, auditor.\n\nYour cashier takes a ₹4,500 interest payment at the counter, then can't delete that entry or touch your interest settings. Your appraiser weighs 24.6 grams and handles no cash at all. Your auditor reads every page and changes nothing.\n\nThat's gold loan software where each login does only its own job.\n\nFree 30-day trial: link in bio.\n\n#goldloan #goldloansoftware #pawnbroker #girvi #staffmanagement"
     },
     {
       "id": "2026-10-16_any-phone",
@@ -392,7 +531,8 @@
       "pillar": "pain-feature",
       "approved": true,
       "posted": {},
-      "status": "queued"
+      "status": "queued",
+      "caption_instagram": "It's 11 am and you're stuck in the bank queue. Check today's collection on your phone.\n\nGoldKhata runs in the browser, on the Android phone or iPhone in your pocket and on the computer already sitting at your counter, so your book is wherever you are.\n\nNothing to install.\n\nOpening a second counter next month? It doesn't need a new machine, just another login.\n\nGold loan software that goes where you go.\n\nFree 30-day trial: link in bio.\n\n#goldloan #goldloansoftware #pawnbroker #girvi #smallbusinessindia"
     }
   ]
 }
