@@ -322,8 +322,14 @@
       "caption": "Highlight frames: free trial (stories carry no caption)",
       "pillar": "profile",
       "approved": true,
-      "posted": {},
-      "status": "queued"
+      "posted": {
+        "instagram": {
+          "id": "17912214867515225",
+          "at": "2026-10-09T05:31:02.800Z"
+        }
+      },
+      "status": "posted",
+      "errors": {}
     },
     {
       "id": "2026-10-09_notices",
