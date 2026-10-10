@@ -377,8 +377,14 @@
       "caption": "Highlight frames: how it works (stories carry no caption)",
       "pillar": "profile",
       "approved": true,
-      "posted": {},
-      "status": "queued"
+      "posted": {
+        "instagram": {
+          "id": "18067262657610053",
+          "at": "2026-10-10T05:30:57.572Z"
+        }
+      },
+      "status": "posted",
+      "errors": {}
     },
     {
       "id": "2026-10-11_story-your-rules",
