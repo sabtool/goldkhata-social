@@ -403,7 +403,13 @@
       "pillar": "profile",
       "approved": true,
       "posted": {},
-      "status": "queued"
+      "status": "queued",
+      "errors": {
+        "instagram": {
+          "message": "Graph API POST /v26.0/17841465341938878/media_publish failed: Media ID is not available (code 9007)",
+          "at": "2026-10-11T05:30:25.459Z"
+        }
+      }
     },
     {
       "id": "2026-10-11_navratri",
