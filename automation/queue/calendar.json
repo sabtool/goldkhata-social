@@ -402,14 +402,14 @@
       "caption": "Highlight frames: your rules (stories carry no caption)",
       "pillar": "profile",
       "approved": true,
-      "posted": {},
-      "status": "queued",
-      "errors": {
+      "posted": {
         "instagram": {
-          "message": "Graph API POST /v26.0/17841465341938878/media_publish failed: Media ID is not available (code 9007)",
-          "at": "2026-10-11T05:30:25.459Z"
+          "id": "18101030738544902",
+          "at": "2026-10-11T07:35:43.955Z"
         }
-      }
+      },
+      "status": "posted",
+      "errors": {}
     },
     {
       "id": "2026-10-11_navratri",
