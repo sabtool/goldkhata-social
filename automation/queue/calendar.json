@@ -456,8 +456,14 @@
       "caption": "Highlight frames: whatsapp (stories carry no caption)",
       "pillar": "profile",
       "approved": true,
-      "posted": {},
-      "status": "queued"
+      "posted": {
+        "instagram": {
+          "id": "18103428854460170",
+          "at": "2026-10-12T05:30:32.345Z"
+        }
+      },
+      "status": "posted",
+      "errors": {}
     },
     {
       "id": "2026-10-12_bank-reconciliation",
