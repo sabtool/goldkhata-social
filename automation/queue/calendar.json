@@ -510,8 +510,14 @@
       "caption": "Highlight frames: your data (stories carry no caption)",
       "pillar": "profile",
       "approved": true,
-      "posted": {},
-      "status": "queued"
+      "posted": {
+        "instagram": {
+          "id": "18644461582011112",
+          "at": "2026-10-13T05:30:47.768Z"
+        }
+      },
+      "status": "posted",
+      "errors": {}
     },
     {
       "id": "2026-10-13_pledge-receipt",
