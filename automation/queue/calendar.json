@@ -563,8 +563,14 @@
       "caption": "Highlight frames: pricing (stories carry no caption)",
       "pillar": "profile",
       "approved": true,
-      "posted": {},
-      "status": "queued"
+      "posted": {
+        "instagram": {
+          "id": "18418730827156759",
+          "at": "2026-10-14T05:30:27.932Z"
+        }
+      },
+      "status": "posted",
+      "errors": {}
     },
     {
       "id": "2026-10-14_staff-roles",
